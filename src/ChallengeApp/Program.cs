@@ -21,7 +21,7 @@ class Program
             result /= numbers.Count;
 
 
-            Console.WriteLine($"Average is: {result:N4}");
+            Console.WriteLine($"Average is: {result:N2}");
             
         if(args.Length > 0)
         {
