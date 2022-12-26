@@ -9,33 +9,19 @@ class Program
         static void Main(string[] args)
         {
 
-            var numbers = new List<double>() {13.8, 6.3, 10.0};
+            var names = new List<string>() {"Jacek", "Radek"};
 
-            var result = 0.0;
+            var numbers = new List<int>() {1,2,3};
 
-            foreach(var n in numbers)
-            {
-                result += n;   
-            }
-
-            result /= numbers.Count;
-
-
-            Console.WriteLine($"Average is: {result:N2}");
-            
-        if(args.Length > 0)
-        {
-            Console.WriteLine("Hello " + args[0]);
+            foreach(var n in names)
+            {    
+                Console.WriteLine(n);  
+                
+                foreach(var w in numbers) 
+                {
+                    Console.WriteLine(w);
+                }
+            }     
         }
-        else
-        {
-            Console.WriteLine("Hello");
-        }
-
-
-        }
-    }
-
-   
-    
+    }  
 }
